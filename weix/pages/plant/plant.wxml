@@ -1,0 +1,8 @@
+<!--pages/plant/plant.wxml-->
+
+<image class="bg" src="/images/bg.jpg"></image>
+
+<view class="wrap, containerColumn">
+  <text>走到喜欢的位置，\r\n种一颗树吧！</text>
+  <button bindtap="begiPlant" type="primary" style="width: 480rpx;height: 150rpx;">位置选好了，开始种树吧</button>
+</view>

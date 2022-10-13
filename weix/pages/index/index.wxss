@@ -1,0 +1,7 @@
+.img1{
+  position: absolute;
+  left: 80rpx;
+  top: 400rpx;
+  width: 80%;
+  height: 400rpx;
+}

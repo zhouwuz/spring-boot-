@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.javakechenxiangmu.dao.StepMapper">
+
+    <resultMap id="step" type="Step">
+        <id property="id" column="id"/>
+        <result property="user_id" column="userId"/>
+        <result property="date" column="date"/>
+        <result property="step" column="step"/>
+    </resultMap>
+
+    <select id="selectStep" parameterType="Integer" resultMap ="step">
+        select * from step where date = date(now()) and user_id=#{userId}
+    </select>
+
+    <insert id="insertStep">
+        insert into step (user_id , date , step) values (#{userId},date(now()),#{step})
+    </insert>
+
+    <update id="updateStep">
+        update step set step = #{step}
+        where user_id = #{userId} and date = date(now())
+    </update>
+
+
+</mapper>
+

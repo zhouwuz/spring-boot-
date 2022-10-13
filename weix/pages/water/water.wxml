@@ -1,0 +1,17 @@
+<!--pages/water/water.wxml-->
+<view>
+    <image class="img1" src="/images/背景.png"></image>
+</view>
+<view>
+    <image class="img4" src="/images/shu.png"></image>
+</view>
+<view>
+    <image bindtap="water2" class="img2" src="/images/water.png"></image>
+</view>
+<view>
+    <image bindtap="chou" class="img3" src="/images/c.png"></image>
+</view>
+<view>
+    <text class="name">{{treeInfo.name}}</text>
+    <text class="life">{{treeInfo.life}}</text>
+</view>

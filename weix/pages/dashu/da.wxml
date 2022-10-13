@@ -1,0 +1,16 @@
+
+<!--pages/water/water.wxml-->
+<view>
+    <image class="img1" src="/images/背景.png"></image>
+</view>
+<view>
+    <image class="img3" src="/images/guo.png"></image>
+</view>
+
+<view>
+    <text class="name">{{treeInfo.name}}</text>
+    <text class="life">{{treeInfo.life}}</text>
+</view>
+<view class="wrap, containerColumn">
+  <text type="primary">恭喜你！！！\r\n树结果了！！</text>
+</view>
